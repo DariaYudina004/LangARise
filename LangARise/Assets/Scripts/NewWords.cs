@@ -1,24 +1,111 @@
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class NewWords : MonoBehaviour
+{
+    [SerializeField] private NewWordsItemsConfig config;
+    [SerializeField] private int numberOfGeneration = 1;
+    [SerializeField] private NewWordsItems wordGenerate;
+    [SerializeField] private TextMeshProUGUI textOfWord;
+    [SerializeField] private TextMeshProUGUI translate;
+    [SerializeField] private TextMeshProUGUI transcription;
+    [SerializeField] private Button pronsance;
+    [SerializeField] private GameObject currentAsset;
+
+
+
+    public void Generate()
+    {
+        Debug.Log("в генерации");
+        wordGenerate = config.wordsList[Random.Range(0, numberOfGeneration - 1)];
+        Instantiate(wordGenerate.ObjOfWord);
+        numberOfGeneration += 1;
+        textOfWord.text = wordGenerate.Words;
+        translate.text = wordGenerate.Translate;
+        transcription.text = wordGenerate.Transcription;
+        pronsance.GetComponent<AudioSource>().clip = wordGenerate.AudioClip;
+        Debug.Log("из генерации");
+    }
+
+    public void Next()
+    {
+        Debug.Log("Внутри некст");
+        currentAsset = wordGenerate.ObjOfWord;
+        if (numberOfGeneration > 1 || wordGenerate != null)
+        {
+            Debug.Log("Внутри условия");
+            //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;
+            Destroy(currentAsset);
+            pronsance.GetComponent<AudioSource>().Stop();
+            Debug.Log("Вне условия");
+
+        }
+        Debug.Log("Not Generation");
+        Generate();
+        Debug.Log("Generation");
+    }
+
+    public void PronanceAudio()
+    {
+        Debug.Log("Внутри PronanceAudio");
+        pronsance.GetComponent<AudioSource>().Play();
+        Debug.Log("вне PronanceAudio");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //using Microsoft.MixedReality.Toolkit.Utilities;
 //using System.Collections;
 //using System.Collections.Generic;
 //using UnityEngine;
 
+//[CreateAssetMenu(menuName = "Config/NewWords", fileName = "NewWords ")]
+//public class NewWords : ScriptableObject
+//{
+//    private NewWordsItems m_NewWordsItems;
+
+//    public void Init(NewWordsItems newWordsItems)
+//    {
+//        m_NewWordsItems = newWordsItems;
+//        GetComponent<MeshFilter>().mesh = m_NewWordsItems.ObjOfWord.GetComponent<MeshFilter>().mesh;//
+//    }
+//}
+
+
 //public class NewWords : MonoBehaviour
 //{
 //    [SerializeField] private NewWordsItemsConfig newWordsItemsConfig;
-//    private int i = 0 ;
+//    private int i = 0;
 //    private int j;
 //    // Start is called before the first frame update
 //    void Start()
 //    {
+
 //        Instantiate(newWordsItemsConfig.newWordsItems[i]);
 //    }
-    
+
 //    public void Continue()
 //    {
 //        Destroy(newWordsItemsConfig.newWordsItems[i]);
-//        if (newWordsItemsConfig.newWordsItems.Count == 0 )
-//        Instantiate(newWordsItemsConfig.newWordsItems[i + 1]);
+//        if (newWordsItemsConfig.newWordsItems.Count == 0)
+//            Instantiate(newWordsItemsConfig.newWordsItems[i + 1]);
 //        Debug.Log(i);
 //    }
 
@@ -30,6 +117,10 @@
 //        Debug.Log(j);
 //    }
 //}
+
+
+
+
 
 //using Microsoft.MixedReality.Toolkit.Utilities;
 //using System;
