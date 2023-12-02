@@ -19,7 +19,7 @@ public class NewWords : MonoBehaviour
     {
         Debug.Log("в генерации");
         wordGenerate = config.wordsList[Random.Range(0, numberOfGeneration - 1)];
-        Instantiate(wordGenerate.ObjOfWord);
+        currentAsset = Instantiate(wordGenerate.ObjOfWord);
         numberOfGeneration += 1;
         textOfWord.text = wordGenerate.Words;
         translate.text = wordGenerate.Translate;
@@ -31,12 +31,11 @@ public class NewWords : MonoBehaviour
     public void Next()
     {
         Debug.Log("Внутри некст");
-        currentAsset = wordGenerate.ObjOfWord;
         if (numberOfGeneration > 1 || wordGenerate != null)
         {
             Debug.Log("Внутри условия");
             //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;
-            Destroy(currentAsset);
+            Destroy(currentAsset.gameObject);
             pronsance.GetComponent<AudioSource>().Stop();
             Debug.Log("Вне условия");
 
