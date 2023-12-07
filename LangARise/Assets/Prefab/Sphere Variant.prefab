@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5585456097704474462, guid: b51fa13055f92284ab1e4974ecc3c826, type: 3}
+      propertyPath: m_TagString
+      value: DeleteWordObject
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b51fa13055f92284ab1e4974ecc3c826, type: 3}
 --- !u!1 &6019300473013295227 stripped

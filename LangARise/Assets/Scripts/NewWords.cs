@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class NewWords : MonoBehaviour
 {
     [SerializeField] private NewWordsItemsConfig config;
-    [SerializeField] private int numberOfGeneration = 1;
+    [SerializeField] private int numberOfGeneration = 0;
     [SerializeField] private NewWordsItems wordGenerate;
     [SerializeField] private TextMeshProUGUI textOfWord;
     [SerializeField] private TextMeshProUGUI translate;
@@ -31,7 +31,7 @@ public class NewWords : MonoBehaviour
     public void Next()
     {
         Debug.Log("Внутри некст");
-        if (numberOfGeneration > 1 || wordGenerate != null)
+        if (GameObject.FindWithTag("DeleteWordObject") != null)
         {
             Debug.Log("Внутри условия");
             //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;

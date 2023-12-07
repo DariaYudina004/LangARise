@@ -28,9 +28,14 @@ MonoBehaviour:
     translate: "\u0443"
     transcription: "\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443"
     audioClip: {fileID: 8300000, guid: 2aaacfca363ed5d4aa5a299dda832057, type: 3}
+  - word: "\u043D\u043D\u043D\u043D\u043D\u043D"
+    objOfWord: {fileID: 6019300473013295227, guid: 3a8600dc7d2136a47baee55bb4c3072f, type: 3}
+    translate: "\u0443"
+    transcription: "\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443"
+    audioClip: {fileID: 8300000, guid: 2aaacfca363ed5d4aa5a299dda832057, type: 3}
   currentWord:
-    word: 
-    objOfWord: {fileID: 0}
-    translate: 
-    transcription: 
-    audioClip: {fileID: 0}
+    word: uuuuuuuu
+    objOfWord: {fileID: 6304609229713939475, guid: e0274e3ac7d3f104f89a7e4aa8efaa2b, type: 3}
+    translate: 8iiiiiiiiiii
+    transcription: uuuuuuuuuuuuu
+    audioClip: {fileID: 8300000, guid: ef877984ad2d0f3439e8ecf0c614f164, type: 3}
