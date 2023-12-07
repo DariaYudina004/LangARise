@@ -6,6 +6,6 @@ using UnityEngine;
 [Serializable]
 public class QuestionsBase 
 {
-    public string Questions;
-    public List<string> answers = new List<string>();
+    public string QuestionsOnBase;
+    public List<string> answersOnBase;
 }

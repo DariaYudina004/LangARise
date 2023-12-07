@@ -20,13 +20,13 @@ public class NewWordsItems
     [SerializeField] private string word;
     public string Words => word;
     [SerializeField] private GameObject objOfWord;
-    public GameObject ObjOfWord { get { return objOfWord; } }
+    public GameObject ObjOfWord => objOfWord;
     [SerializeField] private string translate;
-    public string Translate { get { return translate; } }
+    public string Translate => translate;
     [SerializeField] private string transcription;
-    public string Transcription { get { return transcription; } }
+    public string Transcription => transcription;
     [SerializeField] private AudioClip audioClip;
-    public AudioClip AudioClip { get { return audioClip; } }
+    public AudioClip AudioClip => audioClip;
 }
 
 
