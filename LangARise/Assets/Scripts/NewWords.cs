@@ -12,20 +12,31 @@ public class NewWords : MonoBehaviour
     [SerializeField] private TextMeshProUGUI transcription;
     [SerializeField] private Button pronsance;
     [SerializeField] private GameObject currentAsset;
+    [SerializeField] private GameObject endPanel;
+    [SerializeField] private GameObject learningBlock;
 
 
 
     public void Generate()
     {
-        Debug.Log("в генерации");
-        wordGenerate = config.wordsList[Random.Range(0, numberOfGeneration - 1)];
-        currentAsset = Instantiate(wordGenerate.ObjOfWord);
-        numberOfGeneration += 1;
-        textOfWord.text = wordGenerate.Words;
-        translate.text = wordGenerate.Translate;
-        transcription.text = wordGenerate.Transcription;
-        pronsance.GetComponent<AudioSource>().clip = wordGenerate.AudioClip;
-        Debug.Log("из генерации");
+        if(config.wordsList.Count > 0 )
+        {
+            Debug.Log("в генерации");
+            wordGenerate = config.wordsList[Random.Range(0, config.wordsList.Count)];
+            currentAsset = Instantiate(wordGenerate.ObjOfWord);
+            numberOfGeneration += 1;
+            textOfWord.text = wordGenerate.Words;
+            translate.text = wordGenerate.Translate;
+            transcription.text = wordGenerate.Transcription;
+            pronsance.GetComponent<AudioSource>().clip = wordGenerate.AudioClip;
+            Debug.Log("из генерации");
+        }
+        else
+        {
+            learningBlock.SetActive(false);
+            endPanel.SetActive(true);
+        }
+       
     }
 
     public void Next()
@@ -37,6 +48,7 @@ public class NewWords : MonoBehaviour
             //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;
             Destroy(currentAsset.gameObject);
             pronsance.GetComponent<AudioSource>().Stop();
+            config.wordsList.Remove(wordGenerate);
             Debug.Log("Вне условия");
 
         }

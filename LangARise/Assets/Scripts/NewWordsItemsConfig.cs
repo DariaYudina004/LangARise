@@ -99,7 +99,7 @@ public class NewWordsItemsConfig : ScriptableObject
             {
                 wordsList[index] = value;
             }
-            else Debug.Log("Пипец");
+            else Debug.Log(index);
         }
     }
 }

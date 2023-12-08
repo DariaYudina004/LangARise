@@ -4,5 +4,5 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Configs/QuestionsList", fileName = "QuestionsList")]
 public class QuestionsList : ScriptableObject
 {
-    public List<QuestionsBase> questionsInList;
+    public QuestionsBase[] questionsInList;
 }

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea5baee80c5213f43baa8ca59fd518a2, type: 3}
+  m_Name: New New Words Items Config - Copy 2
+  m_EditorClassIdentifier: 
+  wordsList:
+  - word: 111111111111111
+    objOfWord: {fileID: 2886930617448552681, guid: 5d64a6f3f87f4b64ca4dee33683f80e7, type: 3}
+    translate: 11111111111
+    transcription: 11111111
+    audioClip: {fileID: 8300000, guid: b4407492fb965474aa693d517fc7afa3, type: 3}
+  - word: 2222222222222222
+    objOfWord: {fileID: 2132732751374421689, guid: b19afdf0c4076ae4ba86bc21b58ba0b2, type: 3}
+    translate: 22222222222
+    transcription: 22222222222222
+    audioClip: {fileID: 8300000, guid: 66b25bb5bcda78548a232bc2846e2bf1, type: 3}
+  - word: 33333333
+    objOfWord: {fileID: 6019300473013295227, guid: 3a8600dc7d2136a47baee55bb4c3072f, type: 3}
+    translate: 333333333
+    transcription: 3333333333333
+    audioClip: {fileID: 8300000, guid: 2aaacfca363ed5d4aa5a299dda832057, type: 3}
+  - word: "\u043D\u043D\u043D\u043D\u043D\u043D"
+    objOfWord: {fileID: 6019300473013295227, guid: 3a8600dc7d2136a47baee55bb4c3072f, type: 3}
+    translate: "\u0443"
+    transcription: "\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443\u0443"
+    audioClip: {fileID: 8300000, guid: 2aaacfca363ed5d4aa5a299dda832057, type: 3}
+  currentWord:
+    word: uuuuuuuu
+    objOfWord: {fileID: 6304609229713939475, guid: e0274e3ac7d3f104f89a7e4aa8efaa2b, type: 3}
+    translate: 8iiiiiiiiiii
+    transcription: uuuuuuuuuuuuu
+    audioClip: {fileID: 8300000, guid: ef877984ad2d0f3439e8ecf0c614f164, type: 3}
