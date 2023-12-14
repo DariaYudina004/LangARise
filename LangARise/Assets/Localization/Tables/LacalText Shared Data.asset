@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LacalText Shared Data
   m_EditorClassIdentifier: 
   m_TableCollectionName: LacalText
-  m_TableCollectionNameGuidString: 00000000000000000000000000000000
+  m_TableCollectionNameGuidString: 62209f3d408bae64bad10a9f9e68c8e0
   m_Entries: []
   m_Metadata:
     m_Items: []
