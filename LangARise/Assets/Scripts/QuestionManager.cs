@@ -15,10 +15,13 @@ public class QuestionManager : MonoBehaviour
     public void OnClickAnswerButton()
     {
         oneFromList = new List<object>(Qlist.questionsInList);
+        Debug.Log("ÍÀÆÀËÈ ÍÀ ÊÍÎÏÊÓ ÑÐÀÁÎÒÀËÀ ÃÅÍÅÐÀÖÈß ÂÎÏÐÎÑÀ");
         GenerateQuestionFromList();
     }
+    
     public void GenerateQuestionFromList()
     {
+        Debug.Log("Êîëè÷åñòâî oneFromList.Count" + oneFromList.Count);
         if (oneFromList.Count > 0)
         {
             oneVersion = Random.Range(0, oneFromList.Count);
@@ -29,7 +32,7 @@ public class QuestionManager : MonoBehaviour
             {
                 int rand = Random.Range(0, currentBase.answersOnBase.Count);
                 answersOfOneQuestion[i].text = currentBase.answersOnBase[rand];
-                currentBase.answersOnBase.RemoveAt(rand);
+                //currentBase.answersOnBase.RemoveAt(rand);
                 Debug.Log(i);
             }
         }

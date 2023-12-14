@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI Tables Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI Tables
+  m_TableCollectionNameGuidString: 5672b31a8a2d8ca4981e0eeb7687cce6
+  m_Entries:
+  - m_Id: 4086865985536
+    m_Key: HelloTextInMainMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4433068032000
+    m_Key: StartText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5228274515968
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29758015537152
+    m_Key: ExitFromApp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30024584527872
+    m_Key: Accaunt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30471089160192
+    m_Key: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31038670766080
+    m_Key: Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31210322657280
+    m_Key: Font
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31457845313536
+    m_Key: About the application
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31785495953408
+    m_Key: Gratitude
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32208453763072
+    m_Key: Select application language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32495046361088
+    m_Key: Russian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32850652037120
+    m_Key: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33177065357312
+    m_Key: Chinese
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33420238520320
+    m_Key: Italian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33821012656128
+    m_Key: Listen and translate the text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34254431059968
+    m_Key: Choose a language to learn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34682757578752
+    m_Key: Select study profile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34843693023232
+    m_Key: New words
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35077949095936
+    m_Key: grammar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35501108232192
+    m_Key: Listening
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35778611773440
+    m_Key: Practicing pronunciation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36009717923840
+    m_Key: Translation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36206422392832
+    m_Key: Testing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36472534204416
+    m_Key: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36979407454208
+    m_Key: Listen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37642040377344
+    m_Key: Enter a word to search in the dictionary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38003077677056
+    m_Key: Enter Text in Dictionary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38367973736448
+    m_Key: Search InDictionaty
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2968354056630173696
+  references:
+    version: 2
+    RefIds:
+    - rid: 2968354056630173696
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1702508226313
