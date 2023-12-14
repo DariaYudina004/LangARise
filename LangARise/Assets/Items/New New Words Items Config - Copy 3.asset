@@ -12,7 +12,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea5baee80c5213f43baa8ca59fd518a2, type: 3}
   m_Name: New New Words Items Config - Copy 3
   m_EditorClassIdentifier: 
-  wordsList: []
+  wordsList:
+  - word: 
+    objOfWord: {fileID: 0}
+    translate: 
+    transcription: 
+    audioClip: {fileID: 0}
+  - word: 
+    objOfWord: {fileID: 0}
+    translate: 
+    transcription: 
+    audioClip: {fileID: 0}
+  - word: 
+    objOfWord: {fileID: 0}
+    translate: 
+    transcription: 
+    audioClip: {fileID: 0}
+  - word: 
+    objOfWord: {fileID: 0}
+    translate: 
+    transcription: 
+    audioClip: {fileID: 0}
+  - word: 
+    objOfWord: {fileID: 0}
+    translate: 
+    transcription: 
+    audioClip: {fileID: 0}
+  - word: 
+    objOfWord: {fileID: 0}
+    translate: 
+    transcription: 
+    audioClip: {fileID: 0}
+  - word: 
+    objOfWord: {fileID: 0}
+    translate: 
+    transcription: 
+    audioClip: {fileID: 0}
+  - word: 
+    objOfWord: {fileID: 0}
+    translate: 
+    transcription: 
+    audioClip: {fileID: 0}
   currentWord:
     word: uuuuuuuu
     objOfWord: {fileID: 6304609229713939475, guid: e0274e3ac7d3f104f89a7e4aa8efaa2b, type: 3}

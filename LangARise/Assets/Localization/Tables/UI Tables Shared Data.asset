@@ -131,6 +131,26 @@ MonoBehaviour:
     m_Key: Search InDictionaty
     m_Metadata:
       m_Items: []
+  - m_Id: 241634566131712
+    m_Key: No saved statistics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 245318725324800
+    m_Key: Sound on
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246281703968768
+    m_Key: Font settings are not available
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248111351648256
+    m_Key: The application was developed in 2023, Yudina Daria Antonovna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250015523721216
+    m_Key: Thanks mom and dad
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

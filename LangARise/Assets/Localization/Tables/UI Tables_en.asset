@@ -135,6 +135,26 @@ MonoBehaviour:
     m_Localized: Search
     m_Metadata:
       m_Items: []
+  - m_Id: 241634566131712
+    m_Localized: No saved statistics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 245318725324800
+    m_Localized: Sound on
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246281703968768
+    m_Localized: Font settings are not available
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248111351648256
+    m_Localized: The application was developed in 2023, Yudina Daria Antonovna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250015523721216
+    m_Localized: Thanks mom and dad
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

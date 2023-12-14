@@ -135,6 +135,26 @@ MonoBehaviour:
     m_Localized: Ricerca
     m_Metadata:
       m_Items: []
+  - m_Id: 241634566131712
+    m_Localized: Nessuna statistica salvata
+    m_Metadata:
+      m_Items: []
+  - m_Id: 245318725324800
+    m_Localized: Suono acceso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246281703968768
+    m_Localized: Le impostazioni dei caratteri non sono disponibili
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248111351648256
+    m_Localized: "L'applicazione \xE8 stata sviluppata nel 2023, Yudina Daria Antonovna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250015523721216
+    m_Localized: "Grazie mamma e pap\xE0"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
