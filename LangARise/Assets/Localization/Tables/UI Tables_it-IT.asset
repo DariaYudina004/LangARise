@@ -155,6 +155,46 @@ MonoBehaviour:
     m_Localized: "Grazie mamma e pap\xE0"
     m_Metadata:
       m_Items: []
+  - m_Id: 2058329101828096
+    m_Localized: "Come sai, nella lingua russa ci sono tre tempi verbali: passato,
+      presente e futuro. Esistono anche tre tempi verbali inglesi: presente, passato
+      e futuro, ma a seconda che l'azione sia completa o continua, ciascuno di questi
+      tempi pu\xF2 essere di quattro tipi: semplice, continuo, perfetto e perfetto
+      continuo. Di conseguenza, ci sono 12 forme di tempo in inglese."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2058643582353408
+    m_Localized: Tempi verbali in inglese
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2058904359010304
+    m_Localized: "Un verbo \xE8 una parte indipendente del discorso che denota un'azione
+      o uno stato di un oggetto o di una persona.\r\nIn inglese il segno del verbo
+      alla forma indefinita \xE8 la particella to.\r\nMolto spesso, il verbo \xE8
+      la base chiave attorno alla quale \xE8 costruita una frase, quindi i verbi
+      in quasi tutte le lingue seguono regole grammaticali complesse e hanno un gran
+      numero di forme."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2059234236825600
+    m_Localized: Verbi inglesi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2059594674339840
+    m_Localized: Gerundio in inglese
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2059752480833536
+    m_Localized: "Un gerundio \xE8 una forma impersonale di un verbo inglese con
+      il suffisso -ing, che combina le caratteristiche di un sostantivo e di un verbo
+      e porta una connotazione del significato di un certo processo:\r\nLa nostra
+      direzione incoraggia il lavoro straordinario.\r\nLa nostra direzione incoraggia
+      il lavoro straordinario.\r\nIn russo non esiste una forma simile al gerundio.
+      I pi\xF9 vicini al gerundio nel significato in lingua russa sono i nomi verbali
+      con suffissi -(e) nie, -tie, -ka, -stvo, ecc., Cos\xEC come i verbi nella forma
+      indefinita"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

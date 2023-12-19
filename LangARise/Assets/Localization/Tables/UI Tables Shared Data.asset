@@ -151,6 +151,54 @@ MonoBehaviour:
     m_Key: Thanks mom and dad
     m_Metadata:
       m_Items: []
+  - m_Id: 2058329101828096
+    m_Key: As you know, there are three tenses in the Russian language - past, present
+      and future. There are also three English tenses - present, past and future,
+      but depending on whether the action is complete or continuous, each of these
+      tenses can be of four types - simple, continuous, perfect and perfect continuous.
+      As a result, there are 12 tense forms in English.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2058643582353408
+    m_Key: Tenses in English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2058904359010304
+    m_Key: 'A verb is an independent part of speech that denotes an action or state
+      of an object or person.
+
+      In English, the sign of a verb in the indefinite
+      form is the particle to.
+
+      Most often, the verb is the key basis around
+      which a sentence is built, so verbs in almost all languages follow complex
+      rules of grammar and have a large number of forms.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2059234236825600
+    m_Key: English verbs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2059594674339840
+    m_Key: Gerund in English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2059752480833536
+    m_Key: 'A gerund is an impersonal form of an English verb with the suffix -ing,
+      combining the features of a noun and a verb and carrying a connotation of the
+      meaning of a certain process:
+
+      Our management encourages working overtime.
+
+      Our
+      management encourages overtime work.
+
+      In Russian there is no form similar
+      to the gerund. The closest to the gerund in meaning in the Russian language
+      are verbal nouns with suffixes -(e) nie, -tie, -ka, -stvo, etc., as well as
+      verbs in the indefinite form'
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
