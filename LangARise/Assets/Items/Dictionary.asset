@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea5baee80c5213f43baa8ca59fd518a2, type: 3}
+  m_Name: Dictionary
+  m_EditorClassIdentifier: 
+  wordsList:
+  - word: Apple
+    objOfWord: {fileID: 2252590875282457557, guid: b93d3a185d7b51b4b87713140abdb08e, type: 3}
+    translate: "\u042F\u0431\u043B\u043E\u043A\u043E"
+    transcription: "\u042D\u043F\u043B"
+    audioClip: {fileID: 0}
+  - word: Cheese
+    objOfWord: {fileID: 2129814098683071520, guid: 8d2a7ebf5cdcd5749bb38ce74788bc10, type: 3}
+    translate: "\u0421\u044B\u0440"
+    transcription: "\u0427\u0438\u0438\u0437"
+    audioClip: {fileID: 0}
+  - word: Banana
+    objOfWord: {fileID: 7396431257722304994, guid: 4bbf66d7f12309d4c832c9b4a2337869, type: 3}
+    translate: "\u0411\u0430\u043D\u0430\u043D"
+    transcription: "\u0411\u0430\u043D\u0430\u043D\u0430"
+    audioClip: {fileID: 0}
+  - word: Candy
+    objOfWord: {fileID: 6081757930535923065, guid: 5c9323efc25227b449d188acf5b0d575, type: 3}
+    translate: "\u041A\u043E\u043D\u0444\u0435\u0442\u0430"
+    transcription: "\u041A\u044D\u043D\u0434\u0438"
+    audioClip: {fileID: 0}
+  - word: Cookies
+    objOfWord: {fileID: 2464348544293269617, guid: 51fa7719614b82a4dbfccdbe5b9c4ca1, type: 3}
+    translate: "\u041F\u0435\u0447\u0435\u043D\u044C\u043A\u0438"
+    transcription: "\u041A\u0443\u043A\u0438\u0441"
+    audioClip: {fileID: 0}
+  - word: Cucumber
+    objOfWord: {fileID: 6979334784546964215, guid: ff052af3d00813443be4054a1cdf4149, type: 3}
+    translate: "\u041E\u0433\u0443\u0440\u0435\u0446"
+    transcription: "\u041A\u044C\u044E\u043A\u0430\u043C\u0431\u0435"
+    audioClip: {fileID: 0}
+  - word: Donut
+    objOfWord: {fileID: 8279022112293962662, guid: 87262b11132c61444a8f35ea5bd4bf92, type: 3}
+    translate: "\u041F\u043E\u043D\u0447\u0438\u043A "
+    transcription: "\u0414\u043E\u043D\u0430\u0442"
+    audioClip: {fileID: 0}
+  - word: Beans
+    objOfWord: {fileID: 5981776331003211063, guid: 70d9e17e5d7cce8478d5a7c8ddc3213f, type: 3}
+    translate: "\u0411\u043E\u0431\u044B"
+    transcription: "\u0411\u0438\u043D\u0441"
+    audioClip: {fileID: 0}
+  - word: ice cream sandwich
+    objOfWord: {fileID: 2105616410407784750, guid: b35dfe67cf058fd48abd2519e2259054, type: 3}
+    translate: "\u0421\u0435\u043D\u0434\u0432\u0438\u0447 \u0441 \u043C\u043E\u0440\u043E\u0436\u0435\u043D\u044B\u043C"
+    transcription: "\u0430\u0439\u0441 \u043A\u0440\u0438\u043C \u0441\u044D\u043D\u0434\u0432\u0438\u0447"
+    audioClip: {fileID: 0}
+  - word: Orange
+    objOfWord: {fileID: 6667686311928935021, guid: 78ae4277a318d4d44b36d727590693e0, type: 3}
+    translate: "\u0410\u043F\u0435\u043B\u044C\u0441\u0438\u043D"
+    transcription: "\u041E\u0440\u0430\u043D\u0436"
+    audioClip: {fileID: 0}
+  - word: Bread
+    objOfWord: {fileID: 3318117673916991544, guid: c822fa9de245e39408c73b50fbfb8202, type: 3}
+    translate: "\u0425\u043B\u0435\u0431"
+    transcription: "\u0411\u0440\u0435\u0434"
+    audioClip: {fileID: 0}
+  - word: Pizza
+    objOfWord: {fileID: 5837747373375070019, guid: 1c6f802756b7c9449b2f028fabccb651, type: 3}
+    translate: "\u041F\u0438\u0446\u0446\u0430"
+    transcription: "\u041F\u0438\u0446\u0446\u0430"
+    audioClip: {fileID: 0}
+  - word: Pomegranate
+    objOfWord: {fileID: 909693986085403623, guid: b6309b2a6755bdf44aecf334779dc2d1, type: 3}
+    translate: "\u0413\u0440\u0430\u043D\u0430\u0442"
+    transcription: "\u041F\u043E\u043C\u0435\u0433\u0440\u0430\u043D\u044D\u0439\u0442"
+    audioClip: {fileID: 0}
+  - word: Sandwich
+    objOfWord: {fileID: 6063068936086228955, guid: 4bb841880411cc2449e7b5e01df90fca, type: 3}
+    translate: "\u0411\u0443\u0442\u0435\u0440\u0431\u0440\u043E\u0434"
+    transcription: "\u0421\u044D\u043D\u0434\u0432\u0438\u0447"
+    audioClip: {fileID: 0}
+  - word: Sandwich
+    objOfWord: {fileID: 348580310350566542, guid: f4851159e413a044a9fdb5db910d39e4, type: 3}
+    translate: "\u0411\u0443\u0442\u0435\u0440\u0431\u0440\u043E\u0434"
+    transcription: "\u0421\u044D\u043D\u0434\u0432\u0438\u0447"
+    audioClip: {fileID: 0}
+  currentWord:
+    word: uuuuuuuu
+    objOfWord: {fileID: 6304609229713939475, guid: e0274e3ac7d3f104f89a7e4aa8efaa2b, type: 3}
+    translate: 8iiiiiiiiiii
+    transcription: uuuuuuuuuuuuu
+    audioClip: {fileID: 8300000, guid: ef877984ad2d0f3439e8ecf0c614f164, type: 3}

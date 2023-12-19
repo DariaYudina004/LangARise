@@ -1,3 +1,5 @@
+using Microsoft.MixedReality.Toolkit;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,15 +16,26 @@ public class NewWords : MonoBehaviour
     [SerializeField] private GameObject currentAsset;
     [SerializeField] private GameObject endPanel;
     [SerializeField] private GameObject learningBlock;
+     [SerializeField] private float time = 0;
+    [SerializeField] private GameObject[] obj;
 
+    List<object> oneFromList;
+    private int oneVersion; // Один Экземпляр
+
+    private void Start()
+    {
+        oneFromList = new List<object>(config.wordsList);
+    }
 
 
     public void Generate()
     {
-        if(config.wordsList.Count > 0 )
+        if(oneFromList.Count > 0 )
         {
             Debug.Log("в генерации");
-            wordGenerate = config.wordsList[Random.Range(0, config.wordsList.Count)];
+            
+            oneVersion = Random.Range(0, oneFromList.Count);
+            wordGenerate = oneFromList[oneVersion] as NewWordsItems;
             currentAsset = Instantiate(wordGenerate.ObjOfWord);
             numberOfGeneration += 1;
             textOfWord.text = wordGenerate.Words;
@@ -33,24 +46,38 @@ public class NewWords : MonoBehaviour
         }
         else
         {
+            Debug.Log("Нет Элементов в списке ");
             learningBlock.SetActive(false);
             endPanel.SetActive(true);
+            Debug.Log("Нет Элементов в списке ");
         }
-       
+        if (numberOfGeneration == 1)
+        {
+            currentAsset = wordGenerate.ObjOfWord;
+        }
+
     }
 
     public void Next()
     {
         Debug.Log("Внутри некст");
-        if (GameObject.FindWithTag("DeleteWordObject") != null)
+        obj = GameObject.FindGameObjectsWithTag("DeleteWordObject");
+        if ( obj != null)
         {
             Debug.Log("Внутри условия");
             //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;
             Destroy(currentAsset.gameObject);
             pronsance.GetComponent<AudioSource>().Stop();
-            config.wordsList.Remove(wordGenerate);
+            oneFromList.Remove(wordGenerate);
             Debug.Log("Вне условия");
-
+        }
+        else
+        {
+            Debug.Log("Нет Элементов в списке ");
+            learningBlock.SetActive(false);
+            endPanel.SetActive(true);
+            Destroy(GameObject.FindGameObjectWithTag("DeleteWordObject"));
+            Debug.Log("Нет Элементов в списке ");
         }
         Debug.Log("Not Generation");
         Generate();
@@ -65,6 +92,80 @@ public class NewWords : MonoBehaviour
     }
 }
 
+
+
+
+//using System.Collections.Generic;
+//using TMPro;
+//using UnityEngine;
+//using UnityEngine.UI;
+
+//public class NewWords : MonoBehaviour
+//{
+//    [SerializeField] private NewWordsItemsConfig config;
+//    [SerializeField] private int numberOfGeneration = 0;
+//    [SerializeField] private NewWordsItems wordGenerate;
+//    [SerializeField] private TextMeshProUGUI textOfWord;
+//    [SerializeField] private TextMeshProUGUI translate;
+//    [SerializeField] private TextMeshProUGUI transcription;
+//    [SerializeField] private Button pronsance;
+//    [SerializeField] private GameObject currentAsset;
+//    [SerializeField] private GameObject endPanel;
+//    [SerializeField] private GameObject learningBlock;
+//    List<object> oneFromList;
+//    private void Start()
+//    {
+//        oneFromList = new List<object>(config.wordsList);
+//    }
+
+
+//    public void Generate()
+//    {
+//        if (config.wordsList.Count > 0)
+//        {
+//            Debug.Log("в генерации");
+//            wordGenerate = config.wordsList[Random.Range(0, config.wordsList.Count)];
+//            currentAsset = Instantiate(wordGenerate.ObjOfWord);
+//            numberOfGeneration += 1;
+//            textOfWord.text = wordGenerate.Words;
+//            translate.text = wordGenerate.Translate;
+//            transcription.text = wordGenerate.Transcription;
+//            pronsance.GetComponent<AudioSource>().clip = wordGenerate.AudioClip;
+//            Debug.Log("из генерации");
+//        }
+//        else
+//        {
+//            learningBlock.SetActive(false);
+//            endPanel.SetActive(true);
+//        }
+
+//    }
+
+//    public void Next()
+//    {
+//        Debug.Log("Внутри некст");
+//        if (GameObject.FindWithTag("DeleteWordObject") != null)
+//        {
+//            Debug.Log("Внутри условия");
+//            //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;
+//            Destroy(currentAsset.gameObject);
+//            pronsance.GetComponent<AudioSource>().Stop();
+//            config.wordsList.Remove(wordGenerate);
+//            Debug.Log("Вне условия");
+
+//        }
+//        Debug.Log("Not Generation");
+//        Generate();
+//        Debug.Log("Generation");
+//    }
+
+//    public void PronanceAudio()
+//    {
+//        Debug.Log("Внутри PronanceAudio");
+//        pronsance.GetComponent<AudioSource>().Play();
+//        Debug.Log("вне PronanceAudio");
+//    }
+//}
 
 
 
