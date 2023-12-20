@@ -69,6 +69,10 @@ PrefabInstance:
       value: remapped
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 23e75c08c2723f14f89c1680e4287315, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 23e75c08c2723f14f89c1680e4287315, type: 3}
       propertyPath: m_TagString
       value: DeleteWordObject
       objectReference: {fileID: 0}
