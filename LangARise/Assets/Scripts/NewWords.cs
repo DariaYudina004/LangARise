@@ -8,19 +8,19 @@ public class NewWords : MonoBehaviour
 {
     [SerializeField] private NewWordsItemsConfig config;
     [SerializeField] private int numberOfGeneration = 0;
-    [SerializeField] private NewWordsItems wordGenerate;
+    [SerializeField] protected NewWordsItems wordGenerate;
     [SerializeField] private TextMeshProUGUI textOfWord;
     [SerializeField] private TextMeshProUGUI translate;
     [SerializeField] private TextMeshProUGUI transcription;
-    [SerializeField] private Button pronsance;
-    [SerializeField] private GameObject currentAsset;
-    [SerializeField] private GameObject endPanel;
-    [SerializeField] private GameObject learningBlock;
+    [SerializeField] protected Button pronsance;
+    [SerializeField] protected GameObject currentAsset;
+    [SerializeField] protected GameObject endPanel;
+    [SerializeField] protected GameObject learningBlock;
     ////[SerializeField] private float time = 0;
     //[SerializeField] private GameObject[] obj;
     //private int i = 0;
 
-    List<object> oneFromList;
+    protected List<object> oneFromList;
     private int oneVersion; // Один Экземпляр
 
     public void CreateCopyOfDataBase()
@@ -56,32 +56,33 @@ public class NewWords : MonoBehaviour
 
     }
 
-    public void Next()
-    {
-        Debug.Log("здесь кьюрент " + currentAsset + " ассет ");
-        //Debug.Log("Внутри некст");
-        //obj = GameObject.FindGameObjectsWithTag("DeleteWordObject");
-        Destroy(currentAsset);
-        pronsance.GetComponent<AudioSource>().Stop();
-        if (oneFromList.Count > 0)
-        {
-            Debug.Log("Внутри условия");
-            //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;
-            oneFromList.Remove(wordGenerate);
-            Debug.Log("Not Generation");
-            Generate();
-            Debug.Log("Generation");
-            Debug.Log("Вне условия");
-        }
-        else
-        {
-            Debug.Log("Нет Элементов в списке ");
-            learningBlock.SetActive(false);
-            endPanel.SetActive(true);
-            Debug.Log("Нет Элементов в списке ");
-        }
+    //public void Next()
+    //{
+
+    //    Debug.Log("здесь кьюрент " + currentAsset + " ассет ");
+    //    //Debug.Log("Внутри некст");
+    //    //obj = GameObject.FindGameObjectsWithTag("DeleteWordObject");
+    //    Destroy(currentAsset);
+    //    pronsance.GetComponent<AudioSource>().Stop();
+    //    if (oneFromList.Count > 0)
+    //    {
+    //        Debug.Log("Внутри условия");
+    //        //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;
+    //        oneFromList.Remove(wordGenerate);
+    //        Debug.Log("Not Generation");
+    //        Generate();
+    //        Debug.Log("Generation");
+    //        Debug.Log("Вне условия");
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("Нет Элементов в списке ");
+    //        learningBlock.SetActive(false);
+    //        endPanel.SetActive(true);
+    //        Debug.Log("Нет Элементов в списке ");
+    //    }
       
-    }
+    //}
 
     public void PronanceAudio()
     {
