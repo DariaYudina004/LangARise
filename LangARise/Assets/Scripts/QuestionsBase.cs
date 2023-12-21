@@ -5,5 +5,5 @@ using System.Collections.Generic;
 public class QuestionsBase 
 {
     public string QuestionsOnBase;
-    public List<string> answersOnBase;
+    public string[] answersOnBase = new string[3];
 }
