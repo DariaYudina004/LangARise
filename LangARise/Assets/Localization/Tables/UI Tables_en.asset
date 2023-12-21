@@ -171,12 +171,12 @@ MonoBehaviour:
     m_Localized: 'A verb is an independent part of speech that denotes an action
       or state of an object or person.
 
-      In English, the sign of a verb in
-      the indefinite form is the particle to.
+      In English, the sign of a verb in the
+      indefinite form is the particle to.
 
-      Most often, the verb is the
-      key basis around which a sentence is built, so verbs in almost all languages
-      follow complex rules of grammar and have a large number of forms.'
+      Most often, the verb is the key
+      basis around which a sentence is built, so verbs in almost all languages follow
+      complex rules of grammar and have a large number of forms.'
     m_Metadata:
       m_Items: []
   - m_Id: 2059234236825600
@@ -201,6 +201,10 @@ MonoBehaviour:
       there is no form similar to the gerund. The closest to the gerund in meaning
       in the Russian language are verbal nouns with suffixes -(e) nie, -tie, -ka,
       -stvo, etc., as well as verbs in the indefinite form'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2705660436414464
+    m_Localized: Select text
     m_Metadata:
       m_Items: []
   references:

@@ -199,6 +199,10 @@ MonoBehaviour:
       verbs in the indefinite form'
     m_Metadata:
       m_Items: []
+  - m_Id: 2705660436414464
+    m_Key: Select text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

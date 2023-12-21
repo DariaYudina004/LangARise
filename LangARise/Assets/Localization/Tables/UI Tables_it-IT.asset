@@ -195,6 +195,10 @@ MonoBehaviour:
       indefinita"
     m_Metadata:
       m_Items: []
+  - m_Id: 2705660436414464
+    m_Localized: Seleziona il testo
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
