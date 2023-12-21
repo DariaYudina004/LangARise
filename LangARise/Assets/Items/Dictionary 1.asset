@@ -33,30 +33,10 @@ MonoBehaviour:
     translate: "\u041A\u043E\u043D\u0444\u0435\u0442\u0430"
     transcription: "\u041A\u044D\u043D\u0434\u0438"
     audioClip: {fileID: 0}
-  - word: Cookies
-    objOfWord: {fileID: 2464348544293269617, guid: 51fa7719614b82a4dbfccdbe5b9c4ca1, type: 3}
-    translate: "\u041F\u0435\u0447\u0435\u043D\u044C\u043A\u0438"
-    transcription: "\u041A\u0443\u043A\u0438\u0441"
-    audioClip: {fileID: 0}
   - word: Cucumber
     objOfWord: {fileID: 6979334784546964215, guid: ff052af3d00813443be4054a1cdf4149, type: 3}
     translate: "\u041E\u0433\u0443\u0440\u0435\u0446"
     transcription: "\u041A\u044C\u044E\u043A\u0430\u043C\u0431\u0435"
-    audioClip: {fileID: 0}
-  - word: Donut
-    objOfWord: {fileID: 8279022112293962662, guid: 87262b11132c61444a8f35ea5bd4bf92, type: 3}
-    translate: "\u041F\u043E\u043D\u0447\u0438\u043A "
-    transcription: "\u0414\u043E\u043D\u0430\u0442"
-    audioClip: {fileID: 0}
-  - word: Beans
-    objOfWord: {fileID: 5981776331003211063, guid: 70d9e17e5d7cce8478d5a7c8ddc3213f, type: 3}
-    translate: "\u0411\u043E\u0431\u044B"
-    transcription: "\u0411\u0438\u043D\u0441"
-    audioClip: {fileID: 0}
-  - word: ice cream sandwich
-    objOfWord: {fileID: 2105616410407784750, guid: b35dfe67cf058fd48abd2519e2259054, type: 3}
-    translate: "\u0421\u0435\u043D\u0434\u0432\u0438\u0447 \u0441 \u043C\u043E\u0440\u043E\u0436\u0435\u043D\u044B\u043C"
-    transcription: "\u0430\u0439\u0441 \u043A\u0440\u0438\u043C \u0441\u044D\u043D\u0434\u0432\u0438\u0447"
     audioClip: {fileID: 0}
   - word: Orange
     objOfWord: {fileID: 6667686311928935021, guid: 78ae4277a318d4d44b36d727590693e0, type: 3}
@@ -67,11 +47,6 @@ MonoBehaviour:
     objOfWord: {fileID: 3318117673916991544, guid: c822fa9de245e39408c73b50fbfb8202, type: 3}
     translate: "\u0425\u043B\u0435\u0431"
     transcription: "\u0411\u0440\u0435\u0434"
-    audioClip: {fileID: 0}
-  - word: Pizza
-    objOfWord: {fileID: 5837747373375070019, guid: 1c6f802756b7c9449b2f028fabccb651, type: 3}
-    translate: "\u041F\u0438\u0446\u0446\u0430"
-    transcription: "\u041F\u0438\u0446\u0446\u0430"
     audioClip: {fileID: 0}
   - word: Pomegranate
     objOfWord: {fileID: 909693986085403623, guid: b6309b2a6755bdf44aecf334779dc2d1, type: 3}

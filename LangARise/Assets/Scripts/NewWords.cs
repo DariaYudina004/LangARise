@@ -1,96 +1,225 @@
 using Microsoft.MixedReality.Toolkit;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class NewWords : MonoBehaviour
 {
     [SerializeField] private NewWordsItemsConfig config;
+
     [SerializeField] private int numberOfGeneration = 0;
-    [SerializeField] protected NewWordsItems wordGenerate;
+    [SerializeField] private NewWordsItems wordGenerate;
+    public NewWordsItems WordGenerate { get { return wordGenerate; } set { wordGenerate = value; } }
     [SerializeField] private TextMeshProUGUI textOfWord;
+    public TextMeshProUGUI TextOfWord { get { return textOfWord; } set { textOfWord = value; } }
     [SerializeField] private TextMeshProUGUI translate;
+    public TextMeshProUGUI Translate { get { return translate; } set { translate = value; } }
     [SerializeField] private TextMeshProUGUI transcription;
-    [SerializeField] protected Button pronsance;
-    [SerializeField] protected GameObject currentAsset;
-    [SerializeField] protected GameObject endPanel;
-    [SerializeField] protected GameObject learningBlock;
+    public TextMeshProUGUI Transcription { get { return transcription; } set { transcription = value; } }
+    [SerializeField] private Button pronsance;
+    public Button Pronsance { get { return pronsance; } set { pronsance = value; } }
+    [SerializeField] private GameObject currentAsset;
+    public GameObject CurrentAsset { get { return currentAsset; } set { currentAsset = value; } }
+    [SerializeField] private GameObject endPanel;
+    public GameObject EndPanel { get { return endPanel; } set { endPanel = value; } }
+    [SerializeField] private GameObject learningBlock;
+    public GameObject LearningBlock { get { return learningBlock; } set { learningBlock = value; } }
     ////[SerializeField] private float time = 0;
     //[SerializeField] private GameObject[] obj;
     //private int i = 0;
 
-    protected List<object> oneFromList;
-    private int oneVersion; // Один Экземпляр
 
-    public void CreateCopyOfDataBase()
+    private List<object> oneFromList;
+    public List<object> OneFromList { get { return oneFromList; } set { oneFromList = value; } }
+    private int oneVersion;
+    public int OneVersion { get { return oneVersion; } set { oneVersion = value; } }// Один Экземпляр
+
+    private void Start()
     {
         oneFromList = new List<object>(config.wordsList);
-        Generate();
     }
-
 
     public void Generate()
     {
-        if (oneFromList.Count > 0)
+        if (oneFromList.Count == 0)
         {
-            Debug.Log("в генерации");
-            oneVersion = Random.Range(0, oneFromList.Count);
-            wordGenerate = oneFromList[oneVersion] as NewWordsItems;
-            currentAsset = wordGenerate.ObjOfWord;
-            Instantiate(currentAsset);
-            numberOfGeneration += 1;
-            textOfWord.text = wordGenerate.Words;
-            translate.text = wordGenerate.Translate;
-            transcription.text = wordGenerate.Transcription;
-            pronsance.GetComponent<AudioSource>().clip = wordGenerate.AudioClip;
             Debug.Log("из генерации");
+            Debug.Log("Нет Элементов в списке ");
+            LearningBlock.SetActive(false);
+            EndPanel.SetActive(true);
+            Debug.Log("Нет Элементов в списке ");
+        }
+
+        Debug.Log("в генерации");
+        OneVersion = Random.Range(0, OneFromList.Count);
+        WordGenerate = OneFromList[OneVersion] as NewWordsItems;
+        CurrentAsset = WordGenerate.ObjOfWord;
+        Instantiate(CurrentAsset);
+        numberOfGeneration += 1;
+        TextOfWord.text = WordGenerate.Words;
+        Translate.text = WordGenerate.Translate;
+        Transcription.text = WordGenerate.Transcription;
+        Pronsance.GetComponent<AudioSource>().clip = WordGenerate.AudioClip;
+        Debug.Log(CurrentAsset.ToString());
+    }
+
+    public void Next()
+    {
+        GameObject[] obj = GameObject.FindGameObjectsWithTag("DeleteWordObject");
+        Debug.Log("здесь кьюрент " + obj + " ассет ");
+        //Debug.Log("Внутри некст");
+        //obj = GameObject.FindGameObjectsWithTag("DeleteWordObject");
+        for(int i = 0; i < obj.Length; i++)
+        {
+            Destroy(obj[i]);
+        }
+
+        Pronsance.GetComponent<AudioSource>().Stop();
+        if (OneFromList.Count > 0)
+        {
+            Debug.Log("Внутри условия");
+            //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;
+            OneFromList.Remove(WordGenerate);
+            Debug.Log("Not Generation");
+            Generate();
+            Debug.Log("Generation");
+            Debug.Log("Вне условия");
         }
         else
         {
             Debug.Log("Нет Элементов в списке ");
-            learningBlock.SetActive(false);
-            endPanel.SetActive(true);
+            LearningBlock.SetActive(false);
+            EndPanel.SetActive(true);
             Debug.Log("Нет Элементов в списке ");
         }
 
     }
 
-    //public void Next()
-    //{
-
-    //    Debug.Log("здесь кьюрент " + currentAsset + " ассет ");
-    //    //Debug.Log("Внутри некст");
-    //    //obj = GameObject.FindGameObjectsWithTag("DeleteWordObject");
-    //    Destroy(currentAsset);
-    //    pronsance.GetComponent<AudioSource>().Stop();
-    //    if (oneFromList.Count > 0)
-    //    {
-    //        Debug.Log("Внутри условия");
-    //        //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;
-    //        oneFromList.Remove(wordGenerate);
-    //        Debug.Log("Not Generation");
-    //        Generate();
-    //        Debug.Log("Generation");
-    //        Debug.Log("Вне условия");
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("Нет Элементов в списке ");
-    //        learningBlock.SetActive(false);
-    //        endPanel.SetActive(true);
-    //        Debug.Log("Нет Элементов в списке ");
-    //    }
-      
-    //}
-
     public void PronanceAudio()
     {
         Debug.Log("Внутри PronanceAudio");
-        pronsance.GetComponent<AudioSource>().Play();
+        Pronsance.GetComponent<AudioSource>().Play();
         Debug.Log("вне PronanceAudio");
     }
 }
+
+
+//using Microsoft.MixedReality.Toolkit;
+//using System.Collections.Generic;
+//using TMPro;
+//using Unity.VisualScripting;
+//using UnityEngine;
+//using UnityEngine.UI;
+
+//public class NewWords : MonoBehaviour
+//{
+//    [SerializeField] private NewWordsItemsConfig config;
+
+//    [SerializeField] private int numberOfGeneration = 0;
+//    [SerializeField] private NewWordsItems wordGenerate;
+//    public NewWordsItems WordGenerate { get { return wordGenerate; } set { wordGenerate = value; } }
+//    [SerializeField] private TextMeshProUGUI textOfWord;
+//    public TextMeshProUGUI TextOfWord { get { return textOfWord; } set { textOfWord = value; } }
+//    [SerializeField] private TextMeshProUGUI translate;
+//    public TextMeshProUGUI Translate { get { return translate; } set { translate = value; } }
+//    [SerializeField] private TextMeshProUGUI transcription;
+//    public TextMeshProUGUI Transcription { get { return transcription; } set { transcription = value; } }
+//    [SerializeField] private Button pronsance;
+//    public Button Pronsance { get { return pronsance; } set { pronsance = value; } }
+//    [SerializeField] private GameObject currentAsset;
+//    public GameObject CurrentAsset { get { return currentAsset; } set { currentAsset = value; } }
+//    [SerializeField] private GameObject endPanel;
+//    public GameObject EndPanel { get { return endPanel; } set { endPanel = value; } }
+//    [SerializeField] private GameObject learningBlock;
+//    public GameObject LearningBlock { get { return learningBlock; } set { learningBlock = value; } }
+//    ////[SerializeField] private float time = 0;
+//    //[SerializeField] private GameObject[] obj;
+//    //private int i = 0;
+
+
+//    private List<object> oneFromList;
+//    public List<object> OneFromList { get { return oneFromList; } set { oneFromList = value; } }
+//    private int oneVersion;
+//    public int OneVersion { get { return oneVersion; } set { oneVersion = value; } }// Один Экземпляр
+
+//    private void Start()
+//    {
+//        oneFromList = new List<object>(config.wordsList);
+//    }
+
+//    public void Generate()
+//    {
+//        if (OneFromList.Count <= 0)
+//        {
+//            Debug.Log("из генерации");
+//            Debug.Log("Нет Элементов в списке ");
+//            LearningBlock.SetActive(false);
+//            EndPanel.SetActive(true);
+//            Debug.Log("Нет Элементов в списке ");
+//        }
+//        else
+//        {
+//            Debug.Log("в генерации");
+//            OneVersion = Random.Range(0, OneFromList.Count);
+//            WordGenerate = OneFromList[OneVersion] as NewWordsItems;
+//            CurrentAsset = WordGenerate.ObjOfWord;
+//            Instantiate(CurrentAsset);
+//            numberOfGeneration += 1;
+//            TextOfWord.text = WordGenerate.Words;
+//            Translate.text = WordGenerate.Translate;
+//            Transcription.text = WordGenerate.Transcription;
+//            Pronsance.GetComponent<AudioSource>().clip = WordGenerate.AudioClip;
+
+//        }
+//        Debug.Log(CurrentAsset.ToString());
+//    }
+
+//    public void Next()
+//    {
+
+//        Debug.Log("здесь кьюрент " + CurrentAsset + " ассет ");
+//        //Debug.Log("Внутри некст");
+//        //obj = GameObject.FindGameObjectsWithTag("DeleteWordObject");
+//        Destroy(CurrentAsset);
+
+//        Pronsance.GetComponent<AudioSource>().Stop();
+//        if (OneFromList.Count > 0)
+//        {
+//            Debug.Log("Внутри условия");
+//            //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;
+//            OneFromList.Remove(WordGenerate);
+//            Debug.Log("Not Generation");
+//            Generate();
+//            Debug.Log("Generation");
+//            Debug.Log("Вне условия");
+//        }
+//        else
+//        {
+//            Debug.Log("Нет Элементов в списке ");
+//            LearningBlock.SetActive(false);
+//            EndPanel.SetActive(true);
+//            Debug.Log("Нет Элементов в списке ");
+//        }
+
+//    }
+
+//    public void PronanceAudio()
+//    {
+//        Debug.Log("Внутри PronanceAudio");
+//        Pronsance.GetComponent<AudioSource>().Play();
+//        Debug.Log("вне PronanceAudio");
+//    }
+//}
+
+
+
+
+
+
+
+
 
 
 
