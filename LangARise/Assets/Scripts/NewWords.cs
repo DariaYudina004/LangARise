@@ -1,7 +1,5 @@
-using Microsoft.MixedReality.Toolkit;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,15 +24,12 @@ public class NewWords : MonoBehaviour
     public GameObject EndPanel { get { return endPanel; } set { endPanel = value; } }
     [SerializeField] private GameObject learningBlock;
     public GameObject LearningBlock { get { return learningBlock; } set { learningBlock = value; } }
-    ////[SerializeField] private float time = 0;
-    //[SerializeField] private GameObject[] obj;
-    //private int i = 0;
 
 
     private List<object> oneFromList;
     public List<object> OneFromList { get { return oneFromList; } set { oneFromList = value; } }
     private int oneVersion;
-    public int OneVersion { get { return oneVersion; } set { oneVersion = value; } }// Один Экземпляр
+    public int OneVersion { get { return oneVersion; } set { oneVersion = value; } }
 
     private void Start()
     {
@@ -45,14 +40,10 @@ public class NewWords : MonoBehaviour
     {
         if (oneFromList.Count == 0)
         {
-            Debug.Log("из генерации");
-            Debug.Log("Нет Элементов в списке ");
             LearningBlock.SetActive(false);
             EndPanel.SetActive(true);
-            Debug.Log("Нет Элементов в списке ");
         }
 
-        Debug.Log("в генерации");
         OneVersion = Random.Range(0, OneFromList.Count);
         WordGenerate = OneFromList[OneVersion] as NewWordsItems;
         CurrentAsset = WordGenerate.ObjOfWord;
@@ -68,9 +59,6 @@ public class NewWords : MonoBehaviour
     public void Next()
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("DeleteWordObject");
-        Debug.Log("здесь кьюрент " + obj + " ассет ");
-        //Debug.Log("Внутри некст");
-        //obj = GameObject.FindGameObjectsWithTag("DeleteWordObject");
         for(int i = 0; i < obj.Length; i++)
         {
             Destroy(obj[i]);
@@ -79,29 +67,20 @@ public class NewWords : MonoBehaviour
         Pronsance.GetComponent<AudioSource>().Stop();
         if (OneFromList.Count > 0)
         {
-            Debug.Log("Внутри условия");
-            //GetComponent<MeshFilter>().mesh = wordGenerate.ObjOfWord.GetComponent<MeshFilter>().mesh;
             OneFromList.Remove(WordGenerate);
-            Debug.Log("Not Generation");
             Generate();
-            Debug.Log("Generation");
-            Debug.Log("Вне условия");
         }
         else
         {
-            Debug.Log("Нет Элементов в списке ");
             LearningBlock.SetActive(false);
             EndPanel.SetActive(true);
-            Debug.Log("Нет Элементов в списке ");
         }
 
     }
 
     public void PronanceAudio()
     {
-        Debug.Log("Внутри PronanceAudio");
         Pronsance.GetComponent<AudioSource>().Play();
-        Debug.Log("вне PronanceAudio");
     }
 }
 

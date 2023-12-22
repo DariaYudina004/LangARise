@@ -6,8 +6,23 @@ public class QuestionManager : MonoBehaviour
 {
     public QuestionsList Qlist;
     public TextMeshPro[] answersOfOneQuestion; // Сюда варианты ответов                                          
-    [SerializeField] private TextMeshProUGUI questionText; // Сюда уходит сам вопрос
+    [SerializeField] private TextMeshProUGUI questionText;
+    public TextMeshProUGUI QuestionText { get { return questionText; } set { questionText = value; } }
+    [SerializeField] private List<string> rightAnswer;
+    public List<string> RightAnswer { get { return rightAnswer; } set { rightAnswer = value; } }
+    [SerializeField] private List<string> wrongAnswer;
+    public List<string> WrongAnswer { get { return wrongAnswer; } set { wrongAnswer = value; } }
+    [SerializeField] private GameObject endPanel;
+    public GameObject EndPanel { get { return endPanel; } set { endPanel = value; } }
+    [SerializeField] private GameObject learningBlock;
+    public GameObject LearningBlock { get { return learningBlock; } set { learningBlock = value; } }
+    [SerializeField] private TextMeshProUGUI CountText;
+    [SerializeField] private AudioClip[] buttonRightOrWrongAnswerClip;
 
+    [SerializeField] private int count;
+    public int Count { get { return count; } set { count = value; } }
+    [SerializeField] private int numberOfQuestion;
+    public int NumberOfQuestion { get { return count; } set { count = value; } }
     List<object> oneFromList;
     QuestionsBase currentBase;
     private int oneVersion; // Один Экземпляр
@@ -15,6 +30,8 @@ public class QuestionManager : MonoBehaviour
     public void ClickButoons()
     {
         oneFromList = new List<object>(Qlist.questionsInList);
+        RightAnswer = new List<string>();
+        WrongAnswer = new List<string>();
         Debug.Log("НАЖАЛИ НА КНОПКУ СРАБОТАЛА ГЕНЕРАЦИЯ ВОПРОСА");
         GenerateQuestionFromList();
     }
@@ -25,26 +42,22 @@ public class QuestionManager : MonoBehaviour
         if (oneFromList.Count > 0)
         {
             oneVersion = Random.Range(0, oneFromList.Count);
-            //oneVersion = qList.questionsInList[Random.Range(0, QList.questionsInList.Count)];
             currentBase = oneFromList[oneVersion] as QuestionsBase;
-            questionText.text = currentBase.QuestionsOnBase;
+            QuestionText.text = currentBase.QuestionsOnBase;
             List<string> answer = new List<string>(currentBase.answersOnBase);
             for (int i = 0; i < currentBase.answersOnBase.Length; i++)
             {
+                count = oneFromList.Count - i;
+                CountText.text = "Осталось вопросов: " + count.ToString();
                 int rand = Random.Range(0, answer.Count);
                 answersOfOneQuestion[i].text = answer[rand];
                 answer.RemoveAt(rand);
-                //if (answer.Count <= 2)
-                //{
-                //    answersOfOneQuestion[i].text = currentBase.answersOnBase[i];
-
-                //}
-                Debug.Log(i);
             }
         }
         else
         {
-            questionText.text = "Тестирование окончено";
+            LearningBlock.SetActive(false);
+            EndPanel.SetActive(true);
             Debug.Log("Тестирование окончено");
         }
 
@@ -54,13 +67,19 @@ public class QuestionManager : MonoBehaviour
     {
         if (answersOfOneQuestion[index].text.ToString() == currentBase.answersOnBase[0])
         {
-            questionText.text = "Правильный ответ";
+            answersOfOneQuestion[index].GetComponent<AudioSource>().clip = buttonRightOrWrongAnswerClip[0];
+            answersOfOneQuestion[index].GetComponent<AudioSource>().Play();
+            QuestionText.text = "Правильный ответ";
             Debug.Log("Правильный ответ");
+            RightAnswer.Add(answersOfOneQuestion[index].text.ToString());
         }
         else
         {
-            questionText.text = "Неправильный ответ :(";
+            answersOfOneQuestion[index].GetComponent<AudioSource>().clip = buttonRightOrWrongAnswerClip[1];
+            answersOfOneQuestion[index].GetComponent<AudioSource>().Play();
+            QuestionText.text = "Неправильный ответ :(";
             Debug.Log("Неправильный ответ :(");
+            WrongAnswer.Add(answersOfOneQuestion[index].text.ToString());
         }
         oneFromList.RemoveAt(oneVersion);
         GenerateQuestionFromList();
