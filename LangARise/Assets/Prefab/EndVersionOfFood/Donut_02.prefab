@@ -908,9 +908,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8279022112293962662}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7977309, y: -0.20164154, z: 0.41916808, w: 0.38375014}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1.6682814, y: 1.6682814, z: 1.6682814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7513919448408170698}
@@ -927,7 +927,7 @@ Transform:
   - {fileID: 8225317649214767320}
   - {fileID: 8085428540850379861}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 128.62, y: -55.438995, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2811845972401697701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,7 +971,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 2811845972401697701}
+  constraintsManager: {fileID: 3767684886388266138, guid: b93d3a185d7b51b4b87713140abdb08e, type: 3}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:

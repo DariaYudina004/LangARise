@@ -13,33 +13,63 @@ MonoBehaviour:
   m_Name: QuestionsList 1
   m_EditorClassIdentifier: 
   questionsInList:
-  - QuestionsOnBase: eeeeeeeeeeeeee
+  - QuestionsOnBase: My mother is a good cook.
     answersOnBase:
-    - 111111111
-    - 22222
-    - 3333333
-    - 4444444
-  - QuestionsOnBase: qqqqqqqqqqqqqq
+    - ' I agree with you'
+    - I agree to you
+    - I agree you.
+    - I agree for you
+  - QuestionsOnBase: Do you like reading books?
     answersOnBase:
-    - 111111111111
-    - 222222222222223
-    - 33333333333
-    - 4444444444444
-  - QuestionsOnBase: rrrrrrrrrrrrrrrrrrrrrr
+    - Yes, I like
+    - Yes, I read
+    - Yes, I have
+    - Yes, I do
+  - QuestionsOnBase: What did you eat last night?
     answersOnBase:
-    - 111111111111
-    - 222222222222223
-    - 33333333333
-    - 4444444444444
-  - QuestionsOnBase: kkkkkkkkkkkkkkkkk
+    - Spaghetti
+    - At home
+    - ' With my family '
+    - At six
+  - QuestionsOnBase: How many hours a day do you watch TV?
     answersOnBase:
-    - 111111111111
-    - 222222222222223
-    - 33333333333
-    - 4444444444444
-  - QuestionsOnBase: ssssssssssssssss
+    - About two hours
+    - On Tuesday
+    - I watch the news
+    - ' In my living room.'
+  - QuestionsOnBase: It will ___ fine this afternoon.
     answersOnBase:
-    - 111111111111
-    - 222222222222223
-    - 33333333333
-    - 4444444444444
+    - be
+    - is
+    - nothing
+    - have
+  - QuestionsOnBase: Where can I buy beer?
+    answersOnBase:
+    - At a liquor store
+    - When you are twenty years old
+    - About two bottles
+    - With Jane
+  - QuestionsOnBase: What will you do this afternoon?
+    answersOnBase:
+    - I'll play soccer
+    - I was playing soccer
+    - ' I play soccer'
+    - I played soccer
+  - QuestionsOnBase: You and I ___ good friends.
+    answersOnBase:
+    - are
+    - is
+    - were
+    - was
+  - QuestionsOnBase: Where do you do your homework?
+    answersOnBase:
+    - At home
+    - With John
+    - ' In the evening'
+    - Every day
+  - QuestionsOnBase: My father ___ very busy last week.
+    answersOnBase:
+    - was
+    - is
+    - were
+    - nothing

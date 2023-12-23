@@ -16,53 +16,83 @@ MonoBehaviour:
   - word: Apple
     objOfWord: {fileID: 2252590875282457557, guid: b93d3a185d7b51b4b87713140abdb08e, type: 3}
     translate: "\u042F\u0431\u043B\u043E\u043A\u043E"
-    transcription: "\u042D\u043F\u043B"
-    audioClip: {fileID: 0}
+    transcription: "\u0430\u043C\u0435\u0440. |\u02C8\xE6pl| \u0431\u0440\u0438\u0442.
+      |\u02C8\xE6p(\u0259)l|"
+    audioClip: {fileID: 8300000, guid: b4407492fb965474aa693d517fc7afa3, type: 3}
   - word: Cheese
     objOfWord: {fileID: 2129814098683071520, guid: 8d2a7ebf5cdcd5749bb38ce74788bc10, type: 3}
     translate: "\u0421\u044B\u0440"
-    transcription: "\u0427\u0438\u0438\u0437"
-    audioClip: {fileID: 0}
+    transcription: " |t\u0283i\u02D0z|"
+    audioClip: {fileID: 8300000, guid: aa6fb504903409540ab1db32720f749a, type: 3}
   - word: Banana
     objOfWord: {fileID: 7396431257722304994, guid: 4bbf66d7f12309d4c832c9b4a2337869, type: 3}
     translate: "\u0411\u0430\u043D\u0430\u043D"
-    transcription: "\u0411\u0430\u043D\u0430\u043D\u0430"
-    audioClip: {fileID: 0}
+    transcription: "|b\u0259\u02C8n\xE6n\u0259| \u0431\u0440\u0438\u0442. |b\u0259\u02C8n\u0251\u02D0n\u0259|"
+    audioClip: {fileID: 8300000, guid: f0c9a7de758eed04ab06ea928a37a677, type: 3}
   - word: Candy
     objOfWord: {fileID: 6081757930535923065, guid: 5c9323efc25227b449d188acf5b0d575, type: 3}
     translate: "\u041A\u043E\u043D\u0444\u0435\u0442\u0430"
-    transcription: "\u041A\u044D\u043D\u0434\u0438"
-    audioClip: {fileID: 0}
+    transcription: "|\u02C8k\xE6nd\u026A|"
+    audioClip: {fileID: 8300000, guid: 7a37fad1e96f20d40aba009b80e8f7fc, type: 3}
+  - word: Cookies
+    objOfWord: {fileID: 2464348544293269617, guid: 51fa7719614b82a4dbfccdbe5b9c4ca1, type: 3}
+    translate: "\u041F\u0435\u0447\u0435\u043D\u044C\u043A\u0438"
+    transcription: "|\u02C8k\u028Ak\u026A|"
+    audioClip: {fileID: 8300000, guid: 1cfb2a4e4d5b95f4db024d10344c8c85, type: 3}
   - word: Cucumber
     objOfWord: {fileID: 6979334784546964215, guid: ff052af3d00813443be4054a1cdf4149, type: 3}
     translate: "\u041E\u0433\u0443\u0440\u0435\u0446"
-    transcription: "\u041A\u044C\u044E\u043A\u0430\u043C\u0431\u0435"
-    audioClip: {fileID: 0}
+    transcription: "|\u02C8kju\u02D0k\u028Cmb\u0259r|"
+    audioClip: {fileID: 8300000, guid: f279455c0b999cd429bc0f25f8187da0, type: 3}
+  - word: Donut
+    objOfWord: {fileID: 8279022112293962662, guid: 87262b11132c61444a8f35ea5bd4bf92, type: 3}
+    translate: "\u041F\u043E\u043D\u0447\u0438\u043A "
+    transcription: "\u0430\u043C\u0435\u0440. |\u02C8d\u0259\u028Ane\u026At| \u0431\u0440\u0438\u0442.
+      |d\u0259(\u028A)\u02C8ne\u026At|"
+    audioClip: {fileID: 8300000, guid: a24485ddd895fd54893c8c96c2e11d39, type: 3}
+  - word: Beans
+    objOfWord: {fileID: 5981776331003211063, guid: 70d9e17e5d7cce8478d5a7c8ddc3213f, type: 3}
+    translate: "\u0411\u043E\u0431\u044B"
+    transcription: " |\u02C8bi\u02D0nz|. "
+    audioClip: {fileID: 8300000, guid: f32761a85e7bbbe43bb34b1134fb26e5, type: 3}
+  - word: 'ice cream '
+    objOfWord: {fileID: 2105616410407784750, guid: b35dfe67cf058fd48abd2519e2259054, type: 3}
+    translate: "\u041C\u043E\u0440\u043E\u0436\u0435\u043D\u043E\u0435"
+    transcription: " |a\u026As \u02C8kri\u02D0m| "
+    audioClip: {fileID: 8300000, guid: 71ae45987de9ced4d9ff7595f78966c2, type: 3}
   - word: Orange
     objOfWord: {fileID: 6667686311928935021, guid: 78ae4277a318d4d44b36d727590693e0, type: 3}
     translate: "\u0410\u043F\u0435\u043B\u044C\u0441\u0438\u043D"
-    transcription: "\u041E\u0440\u0430\u043D\u0436"
-    audioClip: {fileID: 0}
+    transcription: "\u0430\u043C\u0435\u0440. |\u02C8\u0254\u02D0r\u026And\u0292|
+      \u0431\u0440\u0438\u0442. |\u02C8\u0252r\u026An(d)\u0292|"
+    audioClip: {fileID: 8300000, guid: 2285109984b38164c94a73f49fdfdfb3, type: 3}
   - word: Bread
     objOfWord: {fileID: 3318117673916991544, guid: c822fa9de245e39408c73b50fbfb8202, type: 3}
     translate: "\u0425\u043B\u0435\u0431"
-    transcription: "\u0411\u0440\u0435\u0434"
-    audioClip: {fileID: 0}
+    transcription: '|bred|'
+    audioClip: {fileID: 8300000, guid: 778bf3e83f554cf40a84835a4e21a2da, type: 3}
+  - word: Pizza
+    objOfWord: {fileID: 5837747373375070019, guid: 1c6f802756b7c9449b2f028fabccb651, type: 3}
+    translate: "\u041F\u0438\u0446\u0446\u0430"
+    transcription: " |\u02C8pi\u02D0ts\u0259|."
+    audioClip: {fileID: 8300000, guid: 4d7e6e704c7162c41a6f79476316e579, type: 3}
   - word: Pomegranate
     objOfWord: {fileID: 909693986085403623, guid: b6309b2a6755bdf44aecf334779dc2d1, type: 3}
     translate: "\u0413\u0440\u0430\u043D\u0430\u0442"
-    transcription: "\u041F\u043E\u043C\u0435\u0433\u0440\u0430\u043D\u044D\u0439\u0442"
-    audioClip: {fileID: 0}
+    transcription: "|\u02C8p\u0251\u02D0m\u026A\u0261r\xE6n\u026At"
+    audioClip: {fileID: 8300000, guid: 43d200b5f41f66144a870927193ec981, type: 3}
   - word: Sandwich
     objOfWord: {fileID: 6063068936086228955, guid: 4bb841880411cc2449e7b5e01df90fca, type: 3}
     translate: "\u0411\u0443\u0442\u0435\u0440\u0431\u0440\u043E\u0434"
-    transcription: "\u0421\u044D\u043D\u0434\u0432\u0438\u0447"
-    audioClip: {fileID: 0}
+    transcription: "\u0430\u043C\u0435\u0440. |\u02C8s\xE6nw\u026At\u0283| \u0431\u0440\u0438\u0442.
+      |\u02C8s\xE6n(d)w\u026Ad\u0292|"
+    audioClip: {fileID: 8300000, guid: fc66907d8426c134d97ca0d1f85efaec, type: 3}
   - word: Sandwich
     objOfWord: {fileID: 348580310350566542, guid: f4851159e413a044a9fdb5db910d39e4, type: 3}
     translate: "\u0411\u0443\u0442\u0435\u0440\u0431\u0440\u043E\u0434"
-    transcription: "\u0421\u044D\u043D\u0434\u0432\u0438\u0447"
-    audioClip: {fileID: 0}
+    transcription: "\u0430\u043C\u0435\u0440. |\u02C8s\xE6nw\u026At\u0283| \u0431\u0440\u0438\u0442.
+      |\u02C8s\xE6n(d)w\u026Ad\u0292|"
+    audioClip: {fileID: 8300000, guid: fc66907d8426c134d97ca0d1f85efaec, type: 3}
   currentWord:
     word: uuuuuuuu
     objOfWord: {fileID: 6304609229713939475, guid: e0274e3ac7d3f104f89a7e4aa8efaa2b, type: 3}
