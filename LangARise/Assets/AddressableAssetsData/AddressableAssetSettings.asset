@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: AddressableAssetSettings
   m_EditorClassIdentifier: 
   m_DefaultGroup: 1cddfbba68e592646855628c5245dc59
-  m_CachedHash:
+  m_currentHash:
     serializedVersion: 2
-    Hash: 00000000000000000000000000000000
+    Hash: d4a271dc1f3a9ef60512ec4ef0bb6d71
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -32,11 +32,14 @@ MonoBehaviour:
   m_ShaderBundleNaming: 0
   m_ShaderBundleCustomNaming: 
   m_MonoScriptBundleNaming: 0
+  m_CheckForContentUpdateRestrictionsOption: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
     m_Id: 
   m_RemoteCatalogLoadPath:
     m_Id: 
+  m_ContentStateBuildPathProfileVariableName: 
+  m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
   m_overridePlayerVersion: 
@@ -49,6 +52,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 96107a29bb107c74db0c29091e83c64c, type: 2}
   - {fileID: 11400000, guid: d74a9af2ecdd50244b8f3eb8aac0244f, type: 2}
   - {fileID: 11400000, guid: c3133243aad3a4246bb09428c5b34962, type: 2}
+  - {fileID: 11400000, guid: e554753dcbc2c9d4fa75d6bf14d0ec4c, type: 2}
+  - {fileID: 11400000, guid: 1a41d31d63ccd434ebab501a400020eb, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -96,6 +101,7 @@ MonoBehaviour:
     - Locale-en
     - Locale-it-IT
     - Locale-ru
+    - Locale-zh-CN
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: ce3d466f83df50c4ba887078b0e6cd75, type: 2}
@@ -115,3 +121,4 @@ MonoBehaviour:
     m_Settings: {fileID: 11400000}
     m_NextInstanceId: 0
     m_RegisteredServiceTypeRefs: []
+    m_PingTimeoutInMilliseconds: 5000

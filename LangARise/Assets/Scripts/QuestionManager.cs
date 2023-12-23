@@ -18,8 +18,11 @@ public class QuestionManager : MonoBehaviour
     public GameObject LearningBlock { get { return learningBlock; } set { learningBlock = value; } }
     [SerializeField] private TextMeshProUGUI CountText;
     [SerializeField] private AudioClip[] buttonRightOrWrongAnswerClip;
-
+    [SerializeField] private AudioSource sourse;
     [SerializeField] private int count;
+    [SerializeField] private GameObject[] hideButtons;
+    [SerializeField] private GameObject[] nowButtons = new GameObject[2];
+    [SerializeField] private TextMeshProUGUI questionText1;
     public int Count { get { return count; } set { count = value; } }
     [SerializeField] private int numberOfQuestion;
     public int NumberOfQuestion { get { return count; } set { count = value; } }
@@ -34,6 +37,14 @@ public class QuestionManager : MonoBehaviour
         WrongAnswer = new List<string>();
         Debug.Log("НАЖАЛИ НА КНОПКУ СРАБОТАЛА ГЕНЕРАЦИЯ ВОПРОСА");
         GenerateQuestionFromList();
+        for (int i = 0; i < hideButtons.Length; i++)
+        {
+            hideButtons[i].SetActive(true);
+        }
+        nowButtons[0].SetActive(false);
+        nowButtons[1].SetActive(false);
+        Debug.Log("Тестирование окончено");
+
     }
 
     public void GenerateQuestionFromList()
@@ -47,7 +58,8 @@ public class QuestionManager : MonoBehaviour
             List<string> answer = new List<string>(currentBase.answersOnBase);
             for (int i = 0; i < currentBase.answersOnBase.Length; i++)
             {
-                count = oneFromList.Count - i;
+                Debug.Log(" oneFromList.Count - i;" + oneFromList.Count);
+                count = oneFromList.Count - 1;
                 CountText.text = "Осталось вопросов: " + count.ToString();
                 int rand = Random.Range(0, answer.Count);
                 answersOfOneQuestion[i].text = answer[rand];
@@ -56,8 +68,14 @@ public class QuestionManager : MonoBehaviour
         }
         else
         {
-            LearningBlock.SetActive(false);
-            EndPanel.SetActive(true);
+            for (int i = 0; i < hideButtons.Length; i++)
+            {
+                hideButtons[i].SetActive(false);
+            }
+            QuestionText.text = "Тестирование окончено";
+            nowButtons[0].SetActive(true);
+            nowButtons[1].SetActive(true);
+            CountText.text = "";
             Debug.Log("Тестирование окончено");
         }
 
@@ -67,21 +85,31 @@ public class QuestionManager : MonoBehaviour
     {
         if (answersOfOneQuestion[index].text.ToString() == currentBase.answersOnBase[0])
         {
-            answersOfOneQuestion[index].GetComponent<AudioSource>().clip = buttonRightOrWrongAnswerClip[0];
-            answersOfOneQuestion[index].GetComponent<AudioSource>().Play();
+            sourse.clip = buttonRightOrWrongAnswerClip[0];
+            sourse.Play();
             QuestionText.text = "Правильный ответ";
             Debug.Log("Правильный ответ");
             RightAnswer.Add(answersOfOneQuestion[index].text.ToString());
         }
         else
         {
-            answersOfOneQuestion[index].GetComponent<AudioSource>().clip = buttonRightOrWrongAnswerClip[1];
-            answersOfOneQuestion[index].GetComponent<AudioSource>().Play();
+            sourse.clip = buttonRightOrWrongAnswerClip[1];
+            sourse.Play();
             QuestionText.text = "Неправильный ответ :(";
             Debug.Log("Неправильный ответ :(");
             WrongAnswer.Add(answersOfOneQuestion[index].text.ToString());
         }
         oneFromList.RemoveAt(oneVersion);
         GenerateQuestionFromList();
+    }
+    public void WriteData()
+    {
+        QuestionText.text = "Неправильные ответы: ";
+        questionText1.text = "";
+        for (int i = 0; i < wrongAnswer.Count; i++)
+        {
+            questionText1.text += wrongAnswer[i] + "\n";
+
+        }
     }
 }

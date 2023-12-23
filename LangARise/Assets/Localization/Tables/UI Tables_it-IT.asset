@@ -199,6 +199,80 @@ MonoBehaviour:
     m_Localized: Seleziona il testo
     m_Metadata:
       m_Items: []
+  - m_Id: 3373020830892032
+    m_Localized: Participio in inglese
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3373027151708160
+    m_Localized: "Un participio \xE8 una forma impersonale di un verbo inglese che
+      ha le propriet\xE0 di un verbo, di un avverbio e di un aggettivo.\r\nI participi
+      inglesi si dividono in participio presente (Participio I) e participio passato
+      (Participio II).\r\nIl participio presente denota un'azione che avviene simultaneamente
+      all'azione espressa dal predicato"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3373657035505664
+    m_Localized: Voce attiva
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3373657270386688
+    m_Localized: "La categoria della voce mostra se l'azione \xE8 eseguita da una
+      persona (oggetto), espressa da un sostantivo o pronome in funzione del soggetto,
+      o se essa stessa sperimenta l'azione di qualcun altro.\r\n\r\nEsistono due
+      tipi di voce in inglese: voce attiva (attiva) e voce passiva (passiva).\r\n\r\nLa
+      voce attiva mostra che la persona o la cosa espressa dal soggetto stesso produce
+      l'azione"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3374408059191296
+    m_Localized: Voce passiva
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3374793868050432
+    m_Localized: "La forma vocale indica se il soggetto della frase (persona o cosa)
+      \xE8 il produttore o l'oggetto dell'azione espressa dal predicato.\r\nLa voce
+      passiva mostra che la persona o la cosa espressa dal soggetto sperimenta su
+      se stessa l'azione:\r\nLa forma passiva viene utilizzata quando chi fa un'azione
+      \xE8 ovvio o insignificante, o quando l'azione o il suo risultato sono pi\xF9
+      interessanti di chi fa.\r\nFormazione della voce passiva\r\nPer ottenere una
+      forma verbale alla voce passiva \xE8 necessario che il verbo ausiliare sia
+      al tempo, alla persona e al numero appropriati e che il participio passato
+      (Participio II) del verbo significativo\r\nNelle frasi negative, la particella
+      not viene posta dopo il verbo ausiliare e, se ce ne sono diversi, dopo il primo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3440584953036800
+    m_Localized: Vedi i risultati
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3484573479600128
+    m_Localized: Mio amico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3484835241918464
+    m_Localized: Vacanze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3485136946593792
+    m_Localized: Helloween
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3485384683159552
+    m_Localized: Libri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3485580011896832
+    m_Localized: Il mio film preferito
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3486499709517824
+    m_Localized: Mosca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3487218302844928
+    m_Localized: Estate
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -203,6 +203,103 @@ MonoBehaviour:
     m_Key: Select text
     m_Metadata:
       m_Items: []
+  - m_Id: 3373020830892032
+    m_Key: Participle in English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3373027151708160
+    m_Key: 'A participle is an impersonal form of an English verb that has the properties
+      of a verb, an adverb and an adjective.
+
+      English participles are divided
+      into present participle (Participle I) and past participle (Participle II).
+
+      The
+      present participle denotes an action occurring simultaneously with the action
+      expressed by the predicate'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3373657035505664
+    m_Key: Active voice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3373657270386688
+    m_Key: 'The category of voice shows whether the action is performed by a person
+      (object), expressed by a noun or pronoun in the function of the subject, or
+      whether it itself experiences someone else''s action.
+
+
+
+      There are two
+      types of voice in English: active voice (active) and passive voice (passive).
+
+
+
+      Active
+      voice shows that the person or thing expressed by the subject itself produces
+      the action'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3374408059191296
+    m_Key: Passive voice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3374793868050432
+    m_Key: 'The voice form indicates whether the subject of the sentence (person
+      or thing) is the producer or object of the action expressed by the predicate.
+
+      Passive
+      voice shows that the person or thing expressed by the subject experiences the
+      action on itself:
+
+      The passive voice is used when the doer of an action
+      is obvious or insignificant, or when the action or its result is more interesting
+      than the doer.
+
+      Formation of the passive voice
+
+      In order to obtain
+      a verb form in the passive voice, you need the auxiliary verb to be in the
+      appropriate tense, person and number and the past participle (Participle II)
+      of the significant verb
+
+      In negative sentences, the particle not is placed
+      after the auxiliary verb, and if there are several of them, then after the
+      first of them'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3440584953036800
+    m_Key: ' View results'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3484573479600128
+    m_Key: My friend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3484835241918464
+    m_Key: Holidays
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3485136946593792
+    m_Key: Helloween
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3485384683159552
+    m_Key: Books
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3485580011896832
+    m_Key: My Favorite Movie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3486499709517824
+    m_Key: 'Moscow '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3487218302844928
+    m_Key: Summer
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

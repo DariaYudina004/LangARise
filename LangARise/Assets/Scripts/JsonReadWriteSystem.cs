@@ -15,7 +15,7 @@ public class JsonReadWriteSystem : MonoBehaviour
         QuestionManager questionManager = new QuestionManager();
         NumberOfTextInfo = questionManager.NumberOfQuestion;
         CountQuestionsInTestInfo = questionManager.Count;
-        TextOfQuestionInfo = questionManager.QuestionText.text;
+        //TextOfQuestionInfo = questionManager.QuestionText.text;
         RightAnswersInfo = questionManager.RightAnswer;
         WrongAnswersInfo = questionManager.WrongAnswer;
 
