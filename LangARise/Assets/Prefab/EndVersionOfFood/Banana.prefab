@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 8834399936506295539}
   - component: {fileID: 6906250151521755273}
   - component: {fileID: -8237374347291466572}
-  - component: {fileID: 7443261029738947931}
   m_Layer: 0
   m_Name: Banana
   m_TagString: DeleteWordObject
@@ -156,7 +155,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 3767684886388266138, guid: b93d3a185d7b51b4b87713140abdb08e, type: 3}
+  constraintsManager: {fileID: 3866343883656828359}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -248,24 +247,9 @@ MonoBehaviour:
   visualizationObject: {fileID: 0}
   interactableObject: {fileID: 0}
   buttonBehavior: 0
-  autoFollowAtDistance: 0
+  autoFollowAtDistance: 1
   autoFollowDistance: 2
   autoFollowTransformTarget: {fileID: 0}
   autoFollowTriggered:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7443261029738947931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7396431257722304994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56cf6d8d29eb2ec41a0512db0c058e8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  model: {fileID: 0}
-  target: {fileID: 0}
-  distatce: 2

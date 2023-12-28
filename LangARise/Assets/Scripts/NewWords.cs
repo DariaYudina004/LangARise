@@ -31,9 +31,21 @@ public class NewWords : MonoBehaviour
     private int oneVersion;
     public int OneVersion { get { return oneVersion; } set { oneVersion = value; } }
 
+    [SerializeField] private GameObject target;
+    [SerializeField] private float distatce = 2;
+
     private void Start()
     {
         oneFromList = new List<object>(config.wordsList);
+    }
+
+
+    private void Update()
+    {
+        if (distatce < Vector3.Distance(currentAsset.transform.position, target.transform.position))
+        {
+            distatce = 2;
+        }
     }
 
     public void Generate()

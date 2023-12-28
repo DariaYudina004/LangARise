@@ -119,9 +119,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fff859c0e59df454ca4279d4eb4aecaf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9064836780477768086}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fff859c0e59df454ca4279d4eb4aecaf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -2910915555459763870}
   m_SourcePrefab: {fileID: 100100000, guid: fff859c0e59df454ca4279d4eb4aecaf, type: 3}
 --- !u!1 &2464348544293269617 stripped
 GameObject:
@@ -243,7 +240,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 3767684886388266138, guid: b93d3a185d7b51b4b87713140abdb08e, type: 3}
+  constraintsManager: {fileID: 3744946511492345706}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -335,27 +332,12 @@ MonoBehaviour:
   visualizationObject: {fileID: 0}
   interactableObject: {fileID: 0}
   buttonBehavior: 0
-  autoFollowAtDistance: 0
+  autoFollowAtDistance: 1
   autoFollowDistance: 2
   autoFollowTransformTarget: {fileID: 0}
   autoFollowTriggered:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-2910915555459763870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2464348544293269617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56cf6d8d29eb2ec41a0512db0c058e8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  model: {fileID: 0}
-  target: {fileID: 0}
-  distatce: 2
 --- !u!4 &2988366352641272523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fff859c0e59df454ca4279d4eb4aecaf, type: 3}

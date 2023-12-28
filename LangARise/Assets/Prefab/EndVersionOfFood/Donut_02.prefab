@@ -896,7 +896,6 @@ GameObject:
   - component: {fileID: 4590392850525640769}
   - component: {fileID: -1170686119209481814}
   - component: {fileID: 5302156954447161490}
-  - component: {fileID: 7960434981232220653}
   m_Layer: 0
   m_Name: Donut_02
   m_TagString: DeleteWordObject
@@ -975,7 +974,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 3767684886388266138, guid: b93d3a185d7b51b4b87713140abdb08e, type: 3}
+  constraintsManager: {fileID: 2811845972401697701}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1178,27 +1177,12 @@ MonoBehaviour:
   visualizationObject: {fileID: 0}
   interactableObject: {fileID: 0}
   buttonBehavior: 0
-  autoFollowAtDistance: 0
+  autoFollowAtDistance: 1
   autoFollowDistance: 2
   autoFollowTransformTarget: {fileID: 0}
   autoFollowTriggered:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7960434981232220653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8279022112293962662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56cf6d8d29eb2ec41a0512db0c058e8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  model: {fileID: 0}
-  target: {fileID: 0}
-  distatce: 2
 --- !u!1 &8418374568764020013
 GameObject:
   m_ObjectHideFlags: 0
