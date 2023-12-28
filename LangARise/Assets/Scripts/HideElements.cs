@@ -1,17 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HideElements : MonoBehaviour
 {
-    public GameObject ZoneOfComfort;
+    [SerializeField] private GameObject model;
+    [SerializeField] private GameObject target;
+    [SerializeField] private float distatce = 2;
 
-    private void OnTriggerEnter(Collider other)
+    private void Update()
     {
-        ZoneOfComfort.SetActive(true);
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        ZoneOfComfort.SetActive(false);
+        if (distatce < Vector3.Distance(model.transform.position, target.transform.position))
+        {
+            distatce = 2;
+        }
     }
 }
