@@ -16,8 +16,7 @@ MonoBehaviour:
   - word: Apple
     objOfWord: {fileID: 2252590875282457557, guid: b93d3a185d7b51b4b87713140abdb08e, type: 3}
     translate: "\u042F\u0431\u043B\u043E\u043A\u043E"
-    transcription: "\u0430\u043C\u0435\u0440. |\u02C8\xE6pl| \u0431\u0440\u0438\u0442.
-      |\u02C8\xE6p(\u0259)l|"
+    transcription: "|\u02C8\xE6p(\u0259)l|"
     audioClip: {fileID: 8300000, guid: b4407492fb965474aa693d517fc7afa3, type: 3}
   - word: Cheese
     objOfWord: {fileID: 2129814098683071520, guid: 8d2a7ebf5cdcd5749bb38ce74788bc10, type: 3}
@@ -27,7 +26,7 @@ MonoBehaviour:
   - word: Banana
     objOfWord: {fileID: 7396431257722304994, guid: 4bbf66d7f12309d4c832c9b4a2337869, type: 3}
     translate: "\u0411\u0430\u043D\u0430\u043D"
-    transcription: "|b\u0259\u02C8n\xE6n\u0259| \u0431\u0440\u0438\u0442. |b\u0259\u02C8n\u0251\u02D0n\u0259|"
+    transcription: "|b\u0259\u02C8n\u0251\u02D0n\u0259|"
     audioClip: {fileID: 8300000, guid: f0c9a7de758eed04ab06ea928a37a677, type: 3}
   - word: Candy
     objOfWord: {fileID: 6081757930535923065, guid: 5c9323efc25227b449d188acf5b0d575, type: 3}
@@ -47,8 +46,7 @@ MonoBehaviour:
   - word: Donut
     objOfWord: {fileID: 8279022112293962662, guid: 87262b11132c61444a8f35ea5bd4bf92, type: 3}
     translate: "\u041F\u043E\u043D\u0447\u0438\u043A "
-    transcription: "\u0430\u043C\u0435\u0440. |\u02C8d\u0259\u028Ane\u026At| \u0431\u0440\u0438\u0442.
-      |d\u0259(\u028A)\u02C8ne\u026At|"
+    transcription: "|d\u0259(\u028A)\u02C8ne\u026At|"
     audioClip: {fileID: 8300000, guid: a24485ddd895fd54893c8c96c2e11d39, type: 3}
   - word: Beans
     objOfWord: {fileID: 5981776331003211063, guid: 70d9e17e5d7cce8478d5a7c8ddc3213f, type: 3}
@@ -63,8 +61,7 @@ MonoBehaviour:
   - word: Orange
     objOfWord: {fileID: 6667686311928935021, guid: 78ae4277a318d4d44b36d727590693e0, type: 3}
     translate: "\u0410\u043F\u0435\u043B\u044C\u0441\u0438\u043D"
-    transcription: "\u0430\u043C\u0435\u0440. |\u02C8\u0254\u02D0r\u026And\u0292|
-      \u0431\u0440\u0438\u0442. |\u02C8\u0252r\u026An(d)\u0292|"
+    transcription: " |\u02C8\u0252r\u026An(d)\u0292|"
     audioClip: {fileID: 8300000, guid: 2285109984b38164c94a73f49fdfdfb3, type: 3}
   - word: Bread
     objOfWord: {fileID: 3318117673916991544, guid: c822fa9de245e39408c73b50fbfb8202, type: 3}
@@ -84,14 +81,12 @@ MonoBehaviour:
   - word: Sandwich
     objOfWord: {fileID: 6063068936086228955, guid: 4bb841880411cc2449e7b5e01df90fca, type: 3}
     translate: "\u0411\u0443\u0442\u0435\u0440\u0431\u0440\u043E\u0434"
-    transcription: "\u0430\u043C\u0435\u0440. |\u02C8s\xE6nw\u026At\u0283| \u0431\u0440\u0438\u0442.
-      |\u02C8s\xE6n(d)w\u026Ad\u0292|"
+    transcription: "|\u02C8s\xE6n(d)w\u026Ad\u0292|"
     audioClip: {fileID: 8300000, guid: fc66907d8426c134d97ca0d1f85efaec, type: 3}
   - word: Sandwich
     objOfWord: {fileID: 348580310350566542, guid: f4851159e413a044a9fdb5db910d39e4, type: 3}
     translate: "\u0411\u0443\u0442\u0435\u0440\u0431\u0440\u043E\u0434"
-    transcription: "\u0430\u043C\u0435\u0440. |\u02C8s\xE6nw\u026At\u0283| \u0431\u0440\u0438\u0442.
-      |\u02C8s\xE6n(d)w\u026Ad\u0292|"
+    transcription: "|\u02C8s\xE6n(d)w\u026Ad\u0292|"
     audioClip: {fileID: 8300000, guid: fc66907d8426c134d97ca0d1f85efaec, type: 3}
   currentWord:
     word: uuuuuuuu

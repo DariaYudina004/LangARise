@@ -31,8 +31,9 @@ public class NewWords : MonoBehaviour
     private int oneVersion;
     public int OneVersion { get { return oneVersion; } set { oneVersion = value; } }
 
-    [SerializeField] private GameObject target;
-    [SerializeField] private float distatce = 2;
+    //[SerializeField] private GameObject target;
+    //[SerializeField] private float distatce = 1;
+    //[SerializeField] private GameObject cameraOfc;
 
     private void Start()
     {
@@ -40,13 +41,13 @@ public class NewWords : MonoBehaviour
     }
 
 
-    private void Update()
-    {
-        if (distatce < Vector3.Distance(currentAsset.transform.position, target.transform.position))
-        {
-            distatce = 2;
-        }
-    }
+    //private void Update()
+    //{
+    //    if (distatce < Vector3.Distance(currentAsset.transform.position, target.transform.position) && distatce < Vector2.Distance(currentAsset.transform.position, cameraOfc.transform.position))
+    //    {
+    //        distatce = 1;
+    //    }
+    //}
 
     public void Generate()
     {

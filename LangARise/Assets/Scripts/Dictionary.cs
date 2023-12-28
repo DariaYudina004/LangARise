@@ -16,7 +16,7 @@ public class Dictionary : MonoBehaviour
     [SerializeField] private Button pronsance;
     private bool flag = false;
 
-    int i = 0;
+    //int i = 0;
 
     public void Search()
     {
